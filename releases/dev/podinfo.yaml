@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: dhruvdarji1/podinfo
-      tag: dev-rmianqzq
+      tag: dev-jhbsbink
     replicaCount: 1
     hpa:
       enabled: false
