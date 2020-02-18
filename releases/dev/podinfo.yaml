@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: dhruvdarji1/podinfo
-      tag: dev-hdtwcel9
+      tag: dev-rmianqzq
     replicaCount: 1
     hpa:
       enabled: false
