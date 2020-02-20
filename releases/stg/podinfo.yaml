@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: dhruvdarji1/podinfo
-      tag: stg-9ij63o4c
+      tag: stg-q6kamtcv
     replicaCount: 2
     hpa:
       enabled: true
