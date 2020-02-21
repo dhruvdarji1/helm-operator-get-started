@@ -55,19 +55,11 @@ linkerd:
     enabled: false
 
 ingress:
-  enabled: true
-  spec:
-  rules:
-  - host: sampleappdev.dev-cluster-3.rancher.gks.gdc-pcs.com
-    http:
-      paths:
-      - backend:
-          serviceName: ingress-5dd80f22c4c932ef537af97278176779
-          servicePort: 9898
-        path: /
+  enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+  path: /*	
   hosts: []
 #    - podinfo.local
   tls: []
