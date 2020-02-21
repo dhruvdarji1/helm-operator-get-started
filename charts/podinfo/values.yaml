@@ -58,11 +58,11 @@ ingress:
   enabled: true
   spec:
   rules:
-  - host: sampleappdev.dev-cluster-3.rancher.gks.gdc-pcs.com
+  - host: sampleapp.dev-cluster-3.rancher.gks.gdc-pcs.com
     http:
       paths:
       - backend:
-          serviceName: ingress-5dd80f22c4c932ef537af97278176779
+          serviceName: podinfo-dev
           servicePort: 9898
         path: /
   annotations: {}
