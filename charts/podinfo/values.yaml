@@ -62,7 +62,7 @@ ingress:
     http:
       paths:
       - backend:
-          serviceName: podinfo-dev
+          serviceName: podinfo-prod
           servicePort: 9898
         path: /
   annotations: {}
