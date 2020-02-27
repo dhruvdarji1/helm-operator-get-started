@@ -18,3 +18,14 @@ spec:
       repository: dhruvdarji1/podinfo
       tag: 0.4.11
     replicaCount: 3
+    ingress:
+      enabled: true
+      spec:
+      rules:
+      - host: sampleapp.dev-cluster-3.rancher.gks.gdc-pcs.com
+        http:
+          paths:
+          - backend:
+              serviceName: podinfo-prod
+              servicePort: 9898
+            path: /
