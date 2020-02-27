@@ -54,17 +54,6 @@ linkerd:
   profile:
     enabled: false
 
-ingress:
-  enabled: true
-  spec:
-  rules:
-  - host: sampleapp.dev-cluster-3.rancher.gks.gdc-pcs.com
-    http:
-      paths:
-      - backend:
-          serviceName: podinfo-prod
-          servicePort: 9898
-        path: /
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
