@@ -18,6 +18,18 @@ spec:
       repository: dhruvdarji1/podinfo
       tag: stg-cprjakjt
     replicaCount: 2
+    ingress:
+      enabled: true
+      spec:
+      rules:
+      - host: sampleappstg.dev-cluster-3.rancher.gks.gdc-pcs.com
+        http:
+          paths:
+          - backend:
+              serviceName: podinfo-prod
+              servicePort: 9898
+            path: /
+
     hpa:
       enabled: true
       maxReplicas: 10
