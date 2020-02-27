@@ -18,5 +18,16 @@ spec:
       repository: stefanprodan/podinfo
       tag: dev-hdtwcel9
     replicaCount: 1
+    ingress:
+      enabled: true
+      spec:
+      rules:
+      - host: sampleappdev.dev-cluster-3.rancher.gks.gdc-pcs.com
+        http:
+          paths:
+          - backend:
+              serviceName: podinfo-prod
+              servicePort: 9898
+            path: /
     hpa:
       enabled: false
