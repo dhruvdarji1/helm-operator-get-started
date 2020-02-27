@@ -22,7 +22,7 @@ spec:
       enabled: true
       spec:
       rules:
-      - host: sampleapp.dev-cluster-3.rancher.gks.gdc-pcs.com
+      - host: sampleappprod.dev-cluster-3.rancher.gks.gdc-pcs.com
         http:
           paths:
           - backend:
