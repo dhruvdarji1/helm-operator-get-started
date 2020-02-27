@@ -22,11 +22,11 @@ spec:
       enabled: true
       spec:
       rules:
-      - host: sampleappprod.dev-cluster-3.rancher.gks.gdc-pcs.com
+      - host: sampleappstg.dev-cluster-3.rancher.gks.gdc-pcs.com
         http:
           paths:
           - backend:
-              serviceName: podinfo-prod
+              serviceName: podinfo-stg
               servicePort: 9898
             path: /
     hpa:
